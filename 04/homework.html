@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" href="test.css">-->
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Courier New', Courier, monospace;/*コマンドプロンプト用フォント*/
+        }
+
+        header{
+            background-color: #003;
+            color: white;
+            padding: 2vw 10vw;
+        }
+        header .space1{
+            height: 2vw;
+        }
+        header .title{
+            background-color: #f5f5f5;
+            color: #003;
+            font-size: 1.5em;
+            text-align: center;
+            padding: 1.8vw;
+        }
+        header nav{
+            text-decoration: none;
+            font-size: 1.5em;
+            line-height: 1.8;
+        }
+        header nav a{
+            color: white;
+        }
+        header nav ul{
+            list-style-type: none;
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+        }
+        main{
+            margin: 0;
+            padding: 2vw 10vw;
+            font-size: 1.25em;
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.8em;
+        }
+
+        .indent2{
+            padding: 1em 4em 2em 4em;
+            overflow: visible;
+        }
+
+        .indent3{
+            padding: 0.8em 2.7em 1.7em 2.7em;
+            overflow: visible;
+        }
+
+        .indent4{
+            padding: 0.5em 1.7em 1.1em 1.7em;
+            overflow: visible;
+        }
+
+        .indent5{
+            padding: 0.3em 1.0em 0.7em 1.0em;
+            overflow: visible;
+        }
+
+        legend{
+            padding: 0em 0.7em;
+        }
+
+        footer{
+            padding: 2vw 0vw;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        #submitButton{
+            font-size: 1em;
+            padding: 0.5em 2em;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <header id="header">
+            <div class="title">
+                <h1 >$ My Portfolio $</h1>
+            </div>
+            <div class="space1"></div>
+            <nav>
+                <ul>
+                    <li><a href="#profile">>  プロフィール</a></li>
+                    <li><a href="#like">>  好きなこと・もの</a></li>
+                    <li><a href="#hobby">>  趣味</a></li>
+                    <li><a href="#circle">>  所属サークル</a></li>
+                    <li><a href="#conntact">>  連絡先</a></li>
+                    <li><a href="#lately">>  近況報告</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section id="profile">
+                <h2>プロフィール</h2>
+                <div class="indent2">
+                    <p>名前: 後藤響介（ごとう　きょうすけ）</p>
+                    <p>所属: 静岡理工科大学 情報学部 コンピュータシステム学科 2年</p>
+                    <p>出身: 富山県</p>
+                </div>
+            </section>
+            <section id="like">
+                <h2>好きなこと・もの</h2>
+                <div class="indent2">
+                    <h3>アニメ</h3>
+                    <div class="indent3">
+                        <p>エヴァンゲリオン</p>
+                        <p>日常</p>
+                    </div>
+                    <h3>その他</h3>
+                    <div class="indent3">
+                        <p>プログラミング</p>
+                        <p>旅行</p>
+                    </div>
+                </div>
+            </section>
+            <section id="hobby">
+                <h2>趣味</h2>
+                <div class="indent2">
+                    <p>お絵描き</p>
+                    <p>DTM</p>
+                </div>
+            </section>
+            <section id="circle">
+                <h2>所属サークル</h2>
+                <div class="indent2">
+                    <p>NOZGAMES</p>
+                    <p>漫研</p>
+                </div>
+            </section>
+            <section id="conntact">
+                <h2>連絡先</h2>
+                <div class="indent2">
+                    <p>まずは以下のフォームに送信してください。</p>
+                    <fieldset class="indent3">
+                        <legend>連絡 / Conntact</legend>
+                        <fieldset class="indent4">
+                            <legend>お名前と連絡先 / Your name & mali</legend>
+                            <label for="class">お名前:</label>
+                            <input type="text" id="class" name="class" required size="12"><br>
+                            <label for="teature">メールアドレス:</label>
+                            <input type="text" id="teature" name="teature" required size="30"><br>
+                        </fieldset><br>
+                        <fieldset class="indent4">
+                            <legend>件名 / Subject</legend>
+                            <label><input type="checkbox" name="qtype" value="1"> 音楽制作について</label><br>
+                            <label><input type="checkbox" name="qtype" value="2"> アプリケーション開発について</label><br>
+                            <label><input type="checkbox" name="qtype" value="3"> イラストについて</label><br>
+                            <label><input type="checkbox" name="qtype" value="4"> その他</label><br>
+                        </fieldset><br>
+                        <fieldset class="indent4">
+                            <legend><label for="throu">本文 / Main body:</label></legend>
+                            <textarea id="throu" name="throught" rows="12" cols="120" placeholder="本文を入力"></textarea>
+                        </fieldset><br>
+                        <button type="submit" id="submitButton">送信</button>
+                    </fieldset>
+                </div>
+
+                
+            </section>
+            <section id="lately">
+                <h2>近況報告</h2>
+                <div class="indent2">
+                    <p>大空スバルの配信を見ることにハマっています</p>
+                </div>
+            </section>
+            <a href="#header">トップに戻る</a>
+        </main>
+        <hr>
+        <footer>
+            (C)opyright 2026 後藤響介 All rights reserved.
+        </footer>
+    </body>
+</html>
