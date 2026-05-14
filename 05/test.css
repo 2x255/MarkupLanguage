@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family:'Courier New', Courier, monospace;/*コマンドプロンプト用フォント*/
+}
+
+header{
+    background-color: #003;
+    color: white;
+    padding: 2vw 10vw;
+}
+header .space1{
+    height: 2vw;
+}
+header .title{
+    background-color: #f5f5f5;
+    color: #003;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1.8vw;
+}
+header nav{
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1.8;
+}
+header nav a{
+    color: white;
+}
+header nav ul{
+    list-style-type: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+main{
+    margin: 0;
+    padding: 2vw 10vw;
+    font-size: 1.25em;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.8em;
+}
+
+.indent2{
+    padding: 1em 4em 2em 4em;
+    overflow: visible;
+}
+
+.indent3{
+    padding: 0.8em 2.7em 1.7em 2.7em;
+    overflow: visible;
+}
+
+.indent4{
+    padding: 0.5em 1.7em 1.1em 1.7em;
+    overflow: visible;
+}
+
+.indent5{
+    padding: 0.3em 1.0em 0.7em 1.0em;
+    overflow: visible;
+}
+
+legend{
+    padding: 0em 0.7em;
+}
+
+footer{
+    padding: 2vw 0vw;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#submitButton{
+    font-size: 1em;
+    padding: 0.5em 2em;
+    text-align: center;
+}
